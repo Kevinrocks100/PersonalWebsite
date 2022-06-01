@@ -63,3 +63,13 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+ul {
+  list-style: none;
+}
+
+.Skills {
+  background-image: url("images/skills.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
