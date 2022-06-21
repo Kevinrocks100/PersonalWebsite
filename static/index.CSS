@@ -4,19 +4,15 @@ body {
   background-color: black;
 }
 
-.Home {
+#Home {
   margin: 0;
   padding: 0;
-  background: url("images/backgroundimage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("images/backgroundimage.jpg") center/cover no-repeat fixed;
   height: 625px;
   width: 100%;
-  background-attachment: fixed;
-  background-position: center;
 }
 
-.Home h1 {
+#typewritereffect {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -29,16 +25,46 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.AboutMe{
+#text {
+  letter-spacing: .17em;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .17em solid red;
+  animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+#AboutMe{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.slidesgo.com/storage/654274/introducing-myself1606309345.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   text-align: center;
   font-size: 30px;
   height: 625px;
 }
 
-.AboutMe h1{
+#AboutMe h1{
   margin: 0;
   padding: 0;
   color: white;
@@ -46,7 +72,7 @@ body {
   top: 50px;
 }
 
-.AboutMe p{
+#AboutMe p{
   margin: 0;
   padding: 0;
   color: White;
@@ -54,22 +80,14 @@ body {
   top: 100px;
 }
 
-.Experience {
+#MyJourney {
   background-color: white;
-}
-
-.Education {
-  background-image: url("images/brooklyncollege.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 ul {
   list-style: none;
 }
 
-.Skills {
-  background-image: url("images/skills.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+#Skills {
+  background: url("images/skills.jpg") center/cover no-repeat fixed;
 }
